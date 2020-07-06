@@ -93,6 +93,29 @@ body {
     background-color: #E8DDCB;
 }
 
+/* Card's results*/
+
+#result-one {
+    text-align: center;
+    padding: 1px solid red;
+    margin-bottom: 20px;
+}
+
+#result-one div p{
+    padding: 5px;
+    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(4, 23, 37);
+    font-size: 20px;
+    background-color: #E8DDCB;
+    display: inline;
+    border-radius: 0.5em;
+    border: 1px solid rgb(4, 23, 37);
+    padding: 10px 20px;
+
+}
+
+
 /* Footer */
 
 .footer {

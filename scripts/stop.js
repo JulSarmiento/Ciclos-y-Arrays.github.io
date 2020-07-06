@@ -2,14 +2,45 @@
 // Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese “Stop”.
 // Almacenar todos los datos en un array y mostrarlos al final.
 
+let numberOne; 
+let values = [];
+
+const resultOne = document.getElementById('result-one');
+
+function handleOne() {
+
+    while(numberOne !== 'stop' ) {
+
+        numberOne = prompt('Ingrese su número aqui: ');
+    
+        if(numberOne === null || numberOne === 'stop'){
+            resultOne.innerHTML =
+                `<div>
+                    <h3>¡Resultado!</h3>
+                    <p>${values}</p>
+                </div>`;
+            return;
+
+        } else if(isNaN(numberOne)) {
+            continue;
+
+        } else {
+            values.push(numberOne);
+        };
+    };
+   
+};
 
 
 
 
-//Dividir arrays
-//Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese 0 (cero). 
-//Crear un array para los números pares, otro para los impares y un tercero para almacenar datos no numéricos.
-//Mostrar los resultados al finalizar el ciclo.
+
+
+
+
+
+
+
 
 //Eliminar extremos 
 //Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese 0 (cero).
