@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Modak&family=Poppins:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/style.css">
         <title>Ejercicios con Arrays | Julieth Sarmiento</title>
     </head>
@@ -21,18 +22,18 @@
                 </ul>
             </nav>
 
-            <h1>¡Ejercicios con Arrays!</h1>
-            <img src="assets/images/Mazu.png" alt="Foto de mi gato Mazuzoe.">
+            <h1 class="title">¡Ejercicios con Arrays!</h1>
+            <img class="picture" src="assets/images/Mazu.png" alt="Foto de mi gato Mazuzoe.">
             
         </header>
 
-        <main id="Principal" class="wrapper grid main">
+        <main id="Principal" class="main">
 
             <article class="card">
 
                 <h2 class="subtitle">¡Stop!</h2>
-                <p class="parragraph"></p>
-                <button class="btn">Iniciar</button>
+                <p class="parragraph">Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese “Stop”. Almacenar todos los datos en un array y mostrarlos al final.</p>
+                <button class="btn" onclick="handleOne()">Iniciar</button>
 
                 <div class="results"></div>
 
@@ -41,8 +42,8 @@
             <article class="card">
 
                 <h2 class="subtitle">¡Dividir Arrays!</h2>
-                <p class="parragraph"></p>
-                <button class="btn">Iniciar</button>
+                <p class="parragraph">Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese 0 (cero). Crear un array para los números pares, otro para los impares y un tercero para almacenar datos no numéricos. Mostrar los resultados al finalizar el ciclo.</p>
+                <button class="btn" onclick="handleTWo()">Iniciar</button>
 
                 <div class="results"></div>
 
@@ -52,8 +53,8 @@
             <article class="card">
 
                 <h2 class="subtitle">¡Eliminar Extremos!</h2>
-                <p class="parragraph"></p>
-                <button class="btn">Iniciar</button>
+                <p class="parragraph">Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese 0 (cero). Almacenar en un array solamente los números. Eliminar del array el número más alto y el más bajo.</p>
+                <button class="btn" onclick="handleThree()">Iniciar</button>
 
                 <div class="results"></div>
                 
@@ -62,8 +63,8 @@
             <article class="card">
 
                 <h2 class="subtitle">¡Dividir Arrays!</h2>
-                <p class="parragraph"></p>
-                <button class="btn">Iniciar</button>
+                <p class="parragraph">Ingresar mediante prompt cualquier carácter hasta el ingreso de un 0 (cero). Almacenar cada ingreso en una posición del array. Al finalizar dividir la cantidad de elementos en 3 arrays iguales</p>
+                <button class="btn" onclick="handleFour()">Iniciar</button>
 
                 <div class="results"></div>
 
@@ -73,7 +74,9 @@
         </main>
 
         <footer class="footer">
+
             <p><small>By: Julieth Sarmiento</small></p>
+
         </footer>
 
     </body>
