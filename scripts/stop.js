@@ -2,12 +2,11 @@
 // Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese “Stop”.
 // Almacenar todos los datos en un array y mostrarlos al final.
 
-let numberOne; 
-let values = [];
-
 const resultOne = document.getElementById('result-one');
 
 function handleOne() {
+    let numberOne; 
+    let values = [];
 
     while(numberOne !== 'stop' ) {
 
@@ -15,15 +14,18 @@ function handleOne() {
     
         if(numberOne === null || numberOne === 'stop'){
             resultOne.innerHTML =
-                `<div>
+                `<div class="results">
                     <h3>¡Resultado!</h3>
-                    <p>${values}</p>
+                    <p class="p">${values}</p>
                 </div>`;
+            return;
+
+        } else if(numberOne === '') {
             return;
 
         } else if(isNaN(numberOne)) {
             continue;
-
+        
         } else {
             values.push(numberOne);
         };
