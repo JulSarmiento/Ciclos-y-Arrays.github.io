@@ -1,7 +1,3 @@
-//Eliminar extremos 
-//Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese 0 (cero).
-//Almacenar en un array solamente los números. Eliminar del array el número más alto y el más bajo.
-
 const resultThree = document.getElementById('result-three');
 
 function handleThree() {
@@ -36,10 +32,9 @@ function handleThree() {
                     <p class="p">${list.sort()}</p>
 
                     <h4>Lsita modificada:</h4>
-                    <p class="p">${listModified}</p>
+                    <p class="p">${listModified.sort()}</p>
                     
                 </div>`;
-   
             return;
 
         } else if(isNaN(numberThree)) {
@@ -48,11 +43,9 @@ function handleThree() {
             
         } else {
             list.push(numberThree);
-          
+        
         };
-
     };
-
 };
 
 
