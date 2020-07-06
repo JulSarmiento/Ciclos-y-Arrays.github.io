@@ -24,7 +24,8 @@ function handleOne() {
             return;
 
         } else if(isNaN(numberOne)) {
-            continue;
+            alert('Por favor ingresa un número. No se aceptan letras ni caracteres diferentes.')
+            return;
         
         } else {
             values.push(numberOne);
@@ -34,21 +35,8 @@ function handleOne() {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-//Eliminar extremos 
-//Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese 0 (cero).
-//Almacenar en un array solamente los números. Eliminar del array el número más alto y el más bajo.
-
 //Dividir Arrays
 //Ingresar mediante prompt cualquier carácter hasta el ingreso de un 0 (cero). 
 //Almacenar cada ingreso en una posición del array.
 //Al finalizar dividir la cantidad de elementos en 3 arrays iguales
+' '
