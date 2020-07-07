@@ -20,8 +20,8 @@ function handleOne() {
                 </div>`;
             return;
 
-        } else if(numberOne === '') {
-            return;
+        } else if(numberOne.length === 0) {
+            continue;
 
         } else if(isNaN(numberOne)) {
             alert('Por favor ingresa un número. No se aceptan letras ni caracteres diferentes.')

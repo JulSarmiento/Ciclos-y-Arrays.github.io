@@ -9,7 +9,7 @@ function handleThree() {
     while(numberThree !== '0' ) {
 
         numberThree = prompt('Ingrese sus números aquí y para terminar escriba "0".');
-    
+            
         if(numberThree === '0' || numberThree === null ){
 
             const minNumber  = Math.min(...list);
@@ -37,18 +37,15 @@ function handleThree() {
                 </div>`;
             return;
 
-        } else if(numberOne === '') {
-            return;
-
-        }else if(isNaN(numberThree)) {
+        } else if(isNaN(numberThree)) {
             alert('Por favor ingresa un número. No se aceptan letras ni caracteres diferentes.')
             return;
             
-        } else {
+        } else if(numberThree.length > 0){
             list.push(numberThree);
+        } 
         
-        };
-    };
+     };
 };
 
 
