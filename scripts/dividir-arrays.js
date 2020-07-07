@@ -18,7 +18,10 @@ function handleTwo() {
         if(numberTwo === '0' || numberTwo === null ){
             return;
 
-        } else if( numberTwo % 2 == 0) {
+        } else if(numberOne === '') {
+            return;
+
+        }else if( numberTwo % 2 == 0) {
             par.push(numberTwo);
 
         } else if( numberTwo % 2 == 1) {

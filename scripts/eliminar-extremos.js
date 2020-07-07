@@ -37,7 +37,10 @@ function handleThree() {
                 </div>`;
             return;
 
-        } else if(isNaN(numberThree)) {
+        } else if(numberOne === '') {
+            return;
+
+        }else if(isNaN(numberThree)) {
             alert('Por favor ingresa un número. No se aceptan letras ni caracteres diferentes.')
             return;
             
